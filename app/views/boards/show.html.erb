@@ -8,11 +8,11 @@
 
 <hr>
 
-<h2>
-  Add a new post
-</h2>
+<% if current_user != nil %>
 
-<% if %>
+  <h2>
+    Add a new post
+  </h2>
 
   <form action="/insert_post" method="post">
     <div>
